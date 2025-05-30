@@ -205,3 +205,48 @@
 
 
 
+
+
+// let age = prompt("Сколько Вам лет?", 18);
+
+// if (age < 18) {
+
+//   function welcome() {
+//     alert("Привет!");
+//   }
+
+// } else {
+
+//   function welcome() {
+//     alert("Здравствуйте!");
+//   }
+
+// }
+// welcome(); 
+// этот код не сработате так как функция существует только внитри конструкции if 
+// что бы написать этот код и он работал нам надо использовать Function Expression и присвоить значение заранее созданной переменной.
+
+// let age = prompt('how old are u?');
+// let welcome;
+// if (age < 18) {
+//     welcome = function() {
+//         console.log('hi')        
+//     }
+// } else {
+//     welcome = function() {
+//         console.log('hello')
+//     }
+// }
+// welcome()
+// упрощаем теперь
+let age = prompt('how old are u');
+let welcome = (age < 18) ? 
+function() {
+    console.log('hi');
+} : 
+function() {
+    console.log('hello')
+}
+welcome()
+
+// в таком варианте функция существует снаружи так как переменная которой мы присвоили функцию создана вне конструкции
