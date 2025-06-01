@@ -239,14 +239,29 @@
 // }
 // welcome()
 // упрощаем теперь
-let age = prompt('how old are u');
-let welcome = (age < 18) ? 
-function() {
-    console.log('hi');
-} : 
-function() {
-    console.log('hello')
-}
-welcome()
+// let age = prompt('how old are u');
+// let welcome = (age < 18) ? 
+// function() {
+//     console.log('hi');
+// } : 
+// function() {
+//     console.log('hello')
+// }
+// welcome()
 
 // в таком варианте функция существует снаружи так как переменная которой мы присвоили функцию создана вне конструкции
+
+// так же имеются стрелочные функции, это красткий синтаксис Function Expression.
+// let age = prompt('how old are u?');
+// let welcome = (age < 18) ?
+//     () => console.log('hi'):
+//     () => console.log("hallo");
+// welcome();
+
+// let sum = (a, b) => {
+//     let result = (a + b)**2;
+//     return result; 
+// }
+// let firstNumber = +prompt('first number');
+// let secondNumber = +prompt('second number');
+// console.log(sum(firstNumber, secondNumber));
