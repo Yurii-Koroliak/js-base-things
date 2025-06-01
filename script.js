@@ -265,3 +265,5 @@
 // let firstNumber = +prompt('first number');
 // let secondNumber = +prompt('second number');
 // console.log(sum(firstNumber, secondNumber));
+
+// Js base course is finished, now I will solve problems with codewars mabey something on lithcode I will look at and move on, there are still a lot of courses and information to come
